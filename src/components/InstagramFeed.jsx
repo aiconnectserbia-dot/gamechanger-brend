@@ -12,32 +12,46 @@ const igImages = [
 
 export default function InstagramFeed() {
   return (
-    <section id="instagram" className="bg-black py-24 px-6">
+    <section id="instagram" className="bg-black py-28 px-6 md:px-12">
       <div className="max-w-7xl mx-auto">
-        <div className="flex flex-col items-center text-center mb-14">
-          <p className="text-white/40 text-xs tracking-[0.3em] uppercase mb-4">Prati nas</p>
-          <a href="https://instagram.com/gamechanger.rs" target="_blank" rel="noopener noreferrer" className="flex items-center gap-3 group" aria-label="Gamechanger Instagram @gamechanger.rs">
-            <Instagram size={20} className="text-white/60 group-hover:text-white transition-colors" />
-            <span className="font-bebas text-4xl md:text-5xl text-white tracking-widest group-hover:text-white/70 transition-colors">@gamechanger.rs</span>
-          </a>
+
+        <div className="mb-16">
+          <p className="text-white/30 text-[10px] tracking-[0.5em] uppercase mb-4">Društvene mreže</p>
+          <div className="flex flex-col md:flex-row md:items-end justify-between gap-6">
+            <a
+              href="https://instagram.com/gamechanger.rs"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex items-center gap-3 group"
+            >
+              <h2
+                className="text-white font-black uppercase leading-none group-hover:text-white/70 transition-colors"
+                style={{ fontSize: 'clamp(2rem, 5vw, 4.5rem)', letterSpacing: '-0.02em' }}
+              >
+                @gamechanger.rs
+              </h2>
+            </a>
+            <p className="text-white/35 text-sm font-light">Prati nas na Instagramu</p>
+          </div>
+          <div className="mt-8 h-px bg-white/8" />
         </div>
-        <div className="grid grid-cols-3 md:grid-cols-6 gap-px bg-white/5">
+
+        <div className="grid grid-cols-3 md:grid-cols-6 gap-1">
           {igImages.map((img, i) => (
-            <a key={i} href="https://instagram.com/gamechanger.rs" target="_blank" rel="noopener noreferrer" className="block overflow-hidden group relative" aria-label="Pogledaj na Instagramu">
-              <div className="aspect-square overflow-hidden">
-                <img src={img.src} alt={img.alt} className="w-full h-full object-cover transition-all duration-500 group-hover:scale-105 group-hover:brightness-75" />
-              </div>
+            <a
+              key={i}
+              href="https://instagram.com/gamechanger.rs"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="block overflow-hidden group relative aspect-square"
+              aria-label="Pogledaj na Instagramu"
+            >
+              <img src={img.src} alt={img.alt} className="w-full h-full object-cover transition-all duration-500 group-hover:scale-105 group-hover:brightness-60" />
               <div className="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                <Instagram size={24} className="text-white" />
+                <Instagram size={20} className="text-white" />
               </div>
             </a>
           ))}
-        </div>
-        <div className="flex justify-center mt-10">
-          <a href="https://instagram.com/gamechanger.rs" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 text-white/40 hover:text-white text-xs tracking-[0.3em] uppercase transition-colors">
-            <Instagram size={14} />
-            Prati @gamechanger.rs
-          </a>
         </div>
       </div>
     </section>

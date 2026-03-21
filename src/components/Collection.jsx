@@ -1,14 +1,14 @@
 import React, { useState } from 'react';
 
 const products = [
-  { id: 1, name: 'Enjoy the Process', price: '3.490 RSD', img: 'https://media.base44.com/images/public/69bedb477b225d6b7ba2279f/2bfe3c430_IMG_4510.jpg', alt: 'Gamechanger majica Enjoy the Process', tag: 'Bestseller' },
-  { id: 2, name: 'Good Vibes & Grooves', price: '3.490 RSD', img: 'https://media.base44.com/images/public/69bedb477b225d6b7ba2279f/f36007ada_IMG_4511.jpg', alt: 'Gamechanger majica Good Vibes Grooves', tag: null },
-  { id: 3, name: "Isn't It Crazy", price: '3.490 RSD', img: 'https://media.base44.com/images/public/69bedb477b225d6b7ba2279f/43dbed585_IMG_4512.jpg', alt: 'Gamechanger majica dollar', tag: 'Novo' },
-  { id: 4, name: 'Mona Lisa', price: '3.490 RSD', img: 'https://media.base44.com/images/public/69bedb477b225d6b7ba2279f/1c5470cee_IMG_4514.jpg', alt: 'Gamechanger majica Mona Lisa', tag: null },
-  { id: 5, name: 'Young Fighter', price: '3.490 RSD', img: 'https://media.base44.com/images/public/69bedb477b225d6b7ba2279f/5ce97a8f5_IMG_4515.jpg', alt: 'Gamechanger majica Young Fighter', tag: null },
-  { id: 6, name: 'Diego', price: '3.490 RSD', img: 'https://media.base44.com/images/public/69bedb477b225d6b7ba2279f/45d599fd1_IMG_4516.jpg', alt: 'Gamechanger majica Diego Maradona', tag: 'Bestseller' },
-  { id: 7, name: 'No Smoking', price: '3.490 RSD', img: 'https://media.base44.com/images/public/69bedb477b225d6b7ba2279f/ec9584fb3_IMG_4518.jpg', alt: 'Gamechanger majica No Smoking', tag: null },
-  { id: 8, name: 'Tutto Passa', price: '3.490 RSD', img: 'https://media.base44.com/images/public/69bedb477b225d6b7ba2279f/763748073_IMG_4519.jpg', alt: 'Gamechanger majica Tutto Passa', tag: 'Novo' },
+  { id: 1, name: 'Enjoy the Process', price: '3.299 RSD', img: 'https://media.base44.com/images/public/69bedb477b225d6b7ba2279f/2bfe3c430_IMG_4510.jpg', alt: 'Gamechanger majica Enjoy the Process', tag: 'Bestseller' },
+  { id: 2, name: 'Martini Night', price: '3.199 RSD', img: 'https://media.base44.com/images/public/69bedb477b225d6b7ba2279f/f36007ada_IMG_4511.jpg', alt: 'Gamechanger majica Martini Night', tag: null },
+  { id: 3, name: 'Money Moves', price: '3.449 RSD', img: 'https://media.base44.com/images/public/69bedb477b225d6b7ba2279f/43dbed585_IMG_4512.jpg', alt: 'Gamechanger majica Money Moves', tag: 'Novo' },
+  { id: 4, name: 'Mona Lisa', price: '3.299 RSD', img: 'https://media.base44.com/images/public/69bedb477b225d6b7ba2279f/1c5470cee_IMG_4514.jpg', alt: 'Gamechanger majica Mona Lisa', tag: null },
+  { id: 5, name: 'The Fighter', price: '3.199 RSD', img: 'https://media.base44.com/images/public/69bedb477b225d6b7ba2279f/5ce97a8f5_IMG_4515.jpg', alt: 'Gamechanger majica The Fighter', tag: null },
+  { id: 6, name: 'El Diego', price: '3.449 RSD', img: 'https://media.base44.com/images/public/69bedb477b225d6b7ba2279f/45d599fd1_IMG_4516.jpg', alt: 'Gamechanger majica El Diego Maradona', tag: 'Bestseller' },
+  { id: 7, name: 'No Smoking Club', price: '3.290 RSD', img: 'https://media.base44.com/images/public/69bedb477b225d6b7ba2279f/ec9584fb3_IMG_4518.jpg', alt: 'Gamechanger majica No Smoking Club', tag: null },
+  { id: 8, name: 'Tutto Passa', price: '3.449 RSD', img: 'https://media.base44.com/images/public/69bedb477b225d6b7ba2279f/763748073_IMG_4519.jpg', alt: 'Gamechanger majica Tutto Passa', tag: 'Novo' },
 ];
 
 export default function Collection() {

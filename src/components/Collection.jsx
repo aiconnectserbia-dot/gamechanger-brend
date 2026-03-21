@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 
 const products = [
-  { id: 1, name: 'Mona Lisa', price: '3.299 RSD', img: 'https://media.base44.com/images/public/69bedb477b225d6b7ba2279f/2bfe3c430_IMG_4510.jpg', alt: 'Gamechanger majica Mona Lisa', tag: 'Bestseller' },
+  { id: 1, name: 'Mona Lisa', price: '2.390 RSD', img: 'https://media.base44.com/images/public/69bedb477b225d6b7ba2279f/2bfe3c430_IMG_4510.jpg', alt: 'Gamechanger majica Mona Lisa', tag: 'Bestseller' },
   { id: 2, name: 'The Fighter', price: '3.199 RSD', img: 'https://media.base44.com/images/public/69bedb477b225d6b7ba2279f/f36007ada_IMG_4511.jpg', alt: 'Gamechanger majica The Fighter', tag: null },
   { id: 3, name: 'El Diego', price: '3.449 RSD', img: 'https://media.base44.com/images/public/69bedb477b225d6b7ba2279f/43dbed585_IMG_4512.jpg', alt: 'Gamechanger majica El Diego', tag: 'Novo' },
   { id: 4, name: 'No Smoking Club', price: '3.299 RSD', img: 'https://media.base44.com/images/public/69bedb477b225d6b7ba2279f/1c5470cee_IMG_4514.jpg', alt: 'Gamechanger majica No Smoking Club', tag: null },

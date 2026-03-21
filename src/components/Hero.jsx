@@ -26,8 +26,8 @@ export default function Hero() {
       <div className="absolute inset-0 bg-gradient-to-t from-black via-black/20 to-transparent" />
       <div className="absolute inset-0 bg-gradient-to-b from-black/60 via-transparent to-transparent" />
 
-      {/* Content — bottom aligned for editorial feel */}
-      <div className="absolute bottom-0 left-0 right-0 px-6 md:px-16 pb-16 md:pb-28">
+      {/* Content — centered on mobile, bottom on desktop */}
+      <div className="absolute inset-0 md:inset-auto md:bottom-0 md:left-0 md:right-0 flex items-center md:block px-6 md:px-16 pb-0 md:pb-28">
         <div className="max-w-7xl mx-auto">
           <p className="text-white/40 text-[9px] tracking-[0.5em] uppercase mb-4 md:hidden">Srpski streetwear brend</p>
           <h1

@@ -10,8 +10,8 @@ export default function About() {
           <div className="relative">
             <div className="aspect-[3/4] overflow-hidden">
               <img
-                src="https://media.base44.com/images/public/69bedb477b225d6b7ba2279f/e26d987e3_IMG_4507.jpg"
-                alt="Gamechanger modni brend Srbija"
+                src="https://media.base44.com/images/public/69bedb477b225d6b7ba2279f/e16a0b1df_IMG_4527.jpg"
+                alt="Gamechanger The World Is Yours majica model"
                 className="w-full h-full object-cover"
               />
             </div>

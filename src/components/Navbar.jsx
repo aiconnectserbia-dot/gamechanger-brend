@@ -40,7 +40,7 @@ export default function Navbar() {
           <a href="https://instagram.com/gamechanger.rs" target="_blank" rel="noopener noreferrer" className="text-white/40 hover:text-white transition-colors" aria-label="Instagram">
             <Instagram size={16} />
           </a>
-          <a href="#kontakt" className="text-[9px] tracking-[0.3em] uppercase text-black bg-white px-5 py-2.5 hover:bg-white/90 transition-colors font-bold">
+          <a href="https://www.instagram.com/gamechanger.rs/" target="_blank" rel="noopener noreferrer" className="text-[9px] tracking-[0.3em] uppercase text-black bg-white px-5 py-2.5 hover:bg-white/90 transition-colors font-bold">
             Poruči
           </a>
         </div>

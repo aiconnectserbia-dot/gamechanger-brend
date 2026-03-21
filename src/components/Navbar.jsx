@@ -24,7 +24,7 @@ export default function Navbar() {
           <img
             src="https://media.base44.com/images/public/69bedb477b225d6b7ba2279f/841e7bd15_Photoroom_20260321_191036.png"
             alt="Gamechanger logo"
-            className="h-14 w-auto"
+            className="h-24 w-auto"
           />
         </a>
 

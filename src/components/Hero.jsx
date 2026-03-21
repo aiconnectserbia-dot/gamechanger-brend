@@ -29,9 +29,6 @@ export default function Hero() {
       {/* Content — bottom aligned for editorial feel */}
       <div className="absolute bottom-0 left-0 right-0 px-8 md:px-16 pb-20 md:pb-28">
         <div className="max-w-7xl mx-auto">
-          <p className="text-white/40 text-[10px] tracking-[0.5em] uppercase mb-5 font-light">
-            Srpski streetwear — od 2024
-          </p>
           <h1
             className="text-white leading-[0.9] mb-8 font-black uppercase"
             style={{ fontSize: 'clamp(4rem, 14vw, 13rem)', letterSpacing: '-0.02em', fontFamily: "'Inter', sans-serif" }}

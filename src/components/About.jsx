@@ -2,17 +2,17 @@ import React from 'react';
 
 export default function About() {
   return (
-    <section id="o-brendu" className="bg-black py-28 px-6 md:px-12">
+    <section id="o-brendu" className="bg-black py-16 md:py-28 px-4 md:px-12">
       <div className="max-w-7xl mx-auto">
-        <div className="grid md:grid-cols-2 gap-16 md:gap-24 items-center">
+        <div className="grid md:grid-cols-2 gap-10 md:gap-24 items-center">
 
           {/* Left: Image */}
           <div className="relative">
-            <div className="aspect-[3/4] overflow-hidden">
+            <div className="aspect-[1/1] md:aspect-[3/4] overflow-hidden">
               <img
                 src="https://media.base44.com/images/public/69bedb477b225d6b7ba2279f/e16a0b1df_IMG_4527.jpg"
                 alt="Gamechanger The World Is Yours majica model"
-                className="w-full h-full object-cover"
+                className="w-full h-full object-cover object-center"
               />
             </div>
             <div className="absolute -bottom-4 -right-4 w-32 h-32 border border-white/8 hidden md:block" />
@@ -20,9 +20,9 @@ export default function About() {
 
           {/* Right: Text */}
           <div>
-            <p className="text-white/30 text-[10px] tracking-[0.5em] uppercase mb-6">O brendu</p>
+            <p className="text-white/30 text-[10px] tracking-[0.5em] uppercase mb-4 md:mb-6">O brendu</p>
             <h2
-              className="text-white font-black uppercase leading-none mb-8"
+              className="text-white font-black uppercase leading-none mb-6 md:mb-8"
               style={{ fontSize: 'clamp(2rem, 5vw, 4rem)', letterSpacing: '-0.02em' }}
             >
               Brend majica<br />Gamechanger

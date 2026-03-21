@@ -31,7 +31,7 @@ export default function Hero() {
         <div className="max-w-7xl mx-auto">
           <h1
             className="text-white leading-[0.9] mb-8 font-black uppercase"
-            style={{ fontSize: 'clamp(4rem, 14vw, 13rem)', letterSpacing: '-0.02em', fontFamily: "'Inter', sans-serif" }}
+            style={{ fontSize: 'clamp(3rem, 10vw, 9rem)', letterSpacing: '-0.02em', fontFamily: "'Inter', sans-serif" }}
           >
             GAME<br />CHANGER
           </h1>

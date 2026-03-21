@@ -2,56 +2,50 @@ import React from 'react';
 
 export default function FeaturesStrip() {
   return (
-    <div className="bg-black border-t border-b border-white/8 py-16 md:py-24 px-6 md:px-16 overflow-hidden relative">
-      
-      {/* Big background number */}
-      <p
-        className="absolute inset-0 flex items-center justify-center text-white/[0.03] font-black select-none pointer-events-none"
-        style={{ fontSize: 'clamp(10rem, 35vw, 28rem)', letterSpacing: '-0.05em' }}
-        aria-hidden="true"
-      >
-        GC
-      </p>
+    <div className="bg-black relative overflow-hidden">
+      {/* Full bleed image with text overlay — split editorial */}
+      <div className="grid md:grid-cols-2 min-h-[70vh] md:min-h-[85vh]">
 
-      <div className="max-w-7xl mx-auto relative z-10">
-        <div className="flex flex-col md:flex-row md:items-end justify-between gap-10 md:gap-24">
-          
-          {/* Left — big quote */}
-          <div className="flex-1">
-            <p className="text-white/20 text-[9px] tracking-[0.5em] uppercase mb-5">Filozofija brenda</p>
-            <h2
-              className="text-white font-black uppercase leading-[0.9]"
-              style={{ fontSize: 'clamp(2rem, 6vw, 5rem)', letterSpacing: '-0.025em' }}
-            >
-              Odeća koja<br />govori pre<br />nego što<br className="md:hidden" /> progovoriš.
-            </h2>
-          </div>
-
-          {/* Right — 3 stats */}
-          <div className="flex flex-row md:flex-col gap-8 md:gap-6 md:text-right">
-            {[
-              { num: '8', label: 'unikatnih dizajna' },
-              { num: '100%', label: 'premium pamuk' },
-              { num: '1', label: 'srpski brend' },
-            ].map((s, i) => (
-              <div key={i}>
-                <p
-                  className="text-white font-black leading-none"
-                  style={{ fontSize: 'clamp(1.8rem, 5vw, 3.5rem)', letterSpacing: '-0.03em' }}
-                >
-                  {s.num}
-                </p>
-                <p className="text-white/30 text-[9px] tracking-[0.35em] uppercase mt-1">{s.label}</p>
-              </div>
-            ))}
-          </div>
+        {/* Left — image */}
+        <div className="relative overflow-hidden min-h-[50vw] md:min-h-0">
+          <img
+            src="https://media.base44.com/images/public/69bedb477b225d6b7ba2279f/0bf456872_IMG_4529.jpg"
+            alt="Gamechanger majica model"
+            className="absolute inset-0 w-full h-full object-cover object-top"
+            style={{ filter: 'brightness(0.75)' }}
+          />
+          {/* subtle overlay */}
+          <div className="absolute inset-0 bg-gradient-to-r from-transparent to-black/60 hidden md:block" />
+          <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent md:hidden" />
         </div>
 
-        {/* Bottom line */}
-        <div className="mt-12 md:mt-16 h-px bg-white/8" />
-        <div className="mt-6 flex flex-col sm:flex-row justify-between gap-3">
-          <p className="text-white/20 text-[9px] tracking-[0.4em] uppercase">Streetwear — Srbija — 2024</p>
-          <p className="text-white/20 text-[9px] tracking-[0.4em] uppercase">Menjaj igru, ne igrača</p>
+        {/* Right — text */}
+        <div className="flex flex-col justify-center px-8 py-14 md:px-16 md:py-0 bg-black">
+          <p className="text-white/25 text-[9px] tracking-[0.55em] uppercase mb-6">Novi dizajni — SS 2025</p>
+
+          <h2
+            className="text-white font-black uppercase leading-[0.88] mb-8"
+            style={{ fontSize: 'clamp(2.4rem, 5.5vw, 5rem)', letterSpacing: '-0.025em' }}
+          >
+            Svaka majica<br />je izjava.
+          </h2>
+
+          <p className="text-white/35 text-sm leading-[1.85] font-light max-w-sm mb-10">
+            Dizajni koji govore — bez potrebe za rečima. Inspirisano kulturom, filmom i slobodom. Nosi priču koja je tvoja.
+          </p>
+
+          <a
+            href="#kolekcija"
+            className="self-start bg-white text-black text-[9px] tracking-[0.35em] uppercase px-7 py-3.5 font-bold hover:bg-white/90 transition-colors"
+          >
+            Istraži kolekciju
+          </a>
+
+          {/* bottom decorative line */}
+          <div className="mt-16 h-px bg-white/8 hidden md:block" />
+          <p className="text-white/15 text-[8px] tracking-[0.45em] uppercase mt-5 hidden md:block">
+            Gamechanger — Srpski streetwear brend
+          </p>
         </div>
       </div>
     </div>

@@ -57,7 +57,7 @@ export default function Navbar() {
               {l.label}
             </a>
           ))}
-          <a href="#kontakt" onClick={() => setMenuOpen(false)} className="text-[9px] tracking-[0.3em] uppercase text-black bg-white px-5 py-3.5 text-center font-bold mt-2">
+          <a href="https://www.instagram.com/gamechanger.rs/" target="_blank" rel="noopener noreferrer" onClick={() => setMenuOpen(false)} className="text-[9px] tracking-[0.3em] uppercase text-black bg-white px-5 py-3.5 text-center font-bold mt-2">
             Poruči
           </a>
         </div>

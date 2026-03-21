@@ -27,18 +27,19 @@ export default function Hero() {
       <div className="absolute inset-0 bg-gradient-to-b from-black/60 via-transparent to-transparent" />
 
       {/* Content — bottom aligned for editorial feel */}
-      <div className="absolute bottom-0 left-0 right-0 px-8 md:px-16 pb-20 md:pb-28">
+      <div className="absolute bottom-0 left-0 right-0 px-6 md:px-16 pb-16 md:pb-28">
         <div className="max-w-7xl mx-auto">
+          <p className="text-white/40 text-[9px] tracking-[0.5em] uppercase mb-4 md:hidden">Srpski streetwear brend</p>
           <h1
-            className="text-white leading-[0.9] mb-8 font-black uppercase"
-            style={{ fontSize: 'clamp(3rem, 10vw, 9rem)', letterSpacing: '-0.02em', fontFamily: "'Inter', sans-serif" }}
+            className="text-white leading-[0.88] mb-6 md:mb-8 font-black uppercase"
+            style={{ fontSize: 'clamp(3.5rem, 18vw, 9rem)', letterSpacing: '-0.02em', fontFamily: "'Inter', sans-serif" }}
           >
             GAME<br />CHANGER
           </h1>
-          <div className="flex flex-col sm:flex-row items-start sm:items-center gap-6">
+          <div className="flex flex-col sm:flex-row items-start sm:items-center gap-4 md:gap-6">
             <a
               href="#kolekcija"
-              className="inline-block bg-white text-black text-[10px] tracking-[0.35em] uppercase px-8 py-4 font-semibold hover:bg-white/90 transition-colors"
+              className="inline-block bg-white text-black text-[9px] tracking-[0.35em] uppercase px-7 py-3.5 md:px-8 md:py-4 font-semibold hover:bg-white/90 transition-colors"
             >
               Istraži kolekciju
             </a>
@@ -50,7 +51,7 @@ export default function Hero() {
       </div>
 
       {/* Slide indicators */}
-      <div className="absolute bottom-8 right-8 md:right-16 flex gap-1.5">
+      <div className="absolute bottom-6 right-6 md:bottom-8 md:right-16 flex gap-1.5">
         {heroImages.map((_, i) => (
           <button
             key={i}

@@ -2,7 +2,6 @@ import React from 'react';
 import Navbar from '../components/Navbar';
 import Hero from '../components/Hero';
 import Marquee from '../components/Marquee';
-import FeaturesStrip from '../components/FeaturesStrip';
 import Collection from '../components/Collection';
 import LifestyleStrip from '../components/LifestyleStrip';
 import About from '../components/About';

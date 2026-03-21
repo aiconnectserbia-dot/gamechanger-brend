@@ -20,8 +20,12 @@ export default function Navbar() {
   return (
     <nav className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 ${scrolled ? 'bg-black/96 border-b border-white/8' : 'bg-transparent'}`}>
       <div className="max-w-7xl mx-auto px-6 md:px-12 py-5 flex items-center justify-between">
-        <a href="#" className="text-white font-black uppercase tracking-tight text-lg hover:text-white/70 transition-colors" style={{ letterSpacing: '-0.01em' }}>
-          GAMECHANGER
+        <a href="#" className="hover:opacity-75 transition-opacity">
+          <img
+            src="https://media.base44.com/images/public/69bedb477b225d6b7ba2279f/841e7bd15_Photoroom_20260321_191036.png"
+            alt="Gamechanger logo"
+            className="h-14 w-auto"
+          />
         </a>
 
         <div className="hidden md:flex items-center gap-10">

@@ -1,32 +1,26 @@
 import React from 'react';
+import Navbar from '../components/Navbar';
+import Hero from '../components/Hero';
+import Marquee from '../components/Marquee';
+import Collection from '../components/Collection';
+import Lookbook from '../components/Lookbook';
+import About from '../components/About';
+import InstagramFeed from '../components/InstagramFeed';
+import ComingSoon from '../components/ComingSoon';
+import Footer from '../components/Footer';
 
-import Header from '@/components/Header';
-
-import HeroProductSection from '@/components/HeroProductSection';
-
-import Footer from '@/components/Footer';
-
-import AppUtilities from '@/components/AppUtilities';
-
-import NewsletterPopup from '@/components/NewsletterPopup';
-
-
-const Home = () => {
+export default function Home() {
   return (
-    <>
-
-      <Header />
-
-      <HeroProductSection />
-
+    <div className="bg-black min-h-screen">
+      <Navbar />
+      <Hero />
+      <Marquee />
+      <Collection />
+      <Lookbook />
+      <About />
+      <InstagramFeed />
+      <ComingSoon />
       <Footer />
-
-      <AppUtilities />
-
-      <NewsletterPopup />
-
-    </>
+    </div>
   );
-};
-
-export default Home;
+}

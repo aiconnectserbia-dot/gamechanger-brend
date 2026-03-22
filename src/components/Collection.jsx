@@ -122,6 +122,27 @@ export default function Collection() {
               </div>
             ))}
           </div>
+          {/* Show more / less */}
+          {!showAll && products.length > INITIAL_VISIBLE && (
+            <div className="flex justify-center mt-14">
+              <button
+                onClick={() => setShowAll(true)}
+                className="border border-white/20 text-white/60 hover:text-white hover:border-white/50 text-[10px] tracking-[0.4em] uppercase px-10 py-4 transition-colors"
+              >
+                Pogledaj celu kolekciju ({products.length} majica)
+              </button>
+            </div>
+          )}
+          {showAll && (
+            <div className="flex justify-center mt-14">
+              <button
+                onClick={() => { setShowAll(false); document.getElementById('kolekcija').scrollIntoView({ behavior: 'smooth' }); }}
+                className="text-white/30 hover:text-white/60 text-[10px] tracking-[0.4em] uppercase transition-colors border-b border-white/15 hover:border-white/40 pb-1"
+              >
+                Prikaži manje ↑
+              </button>
+            </div>
+          )}
         </div>
       </section>
 

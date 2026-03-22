@@ -25,12 +25,17 @@ const products = [
 
 const sizes = ['XS', 'S', 'M', 'L', 'XL', 'XXL'];
 
+const INITIAL_VISIBLE = 8;
+
 export default function Collection() {
   const [cart, setCart] = useState([]);
   const [cartOpen, setCartOpen] = useState(false);
   const [selectedProduct, setSelectedProduct] = useState(null);
   const [selectedSize, setSelectedSize] = useState('');
   const [sizeError, setSizeError] = useState(false);
+  const [showAll, setShowAll] = useState(false);
+
+  const visibleProducts = showAll ? products : products.slice(0, INITIAL_VISIBLE);
 
   const cartCount = cart.reduce((s, i) => s + i.qty, 0);
 
@@ -94,7 +99,7 @@ export default function Collection() {
 
           {/* Grid */}
           <div className="grid grid-cols-2 lg:grid-cols-4 gap-2 md:gap-8">
-            {products.map((p) => (
+            {visibleProducts.map((p) => (
               <div key={p.id} className="group cursor-pointer" onClick={() => openProduct(p)}>
                 <div className="relative overflow-hidden bg-zinc-950 aspect-[3/4] mb-3">
                   <img src={p.img} alt={p.alt} className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-[1.04]" />

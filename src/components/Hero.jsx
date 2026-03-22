@@ -32,7 +32,7 @@ export default function Hero() {
           <p className="text-white/40 text-[9px] tracking-[0.5em] uppercase mb-4 md:hidden">Srpski streetwear brend</p>
           <h1
             className="text-white leading-[0.88] mb-6 md:mb-8 font-black uppercase"
-            style={{ fontSize: 'clamp(3.5rem, 18vw, 9rem)', letterSpacing: '-0.02em', fontFamily: "'Inter', sans-serif" }}
+            style={{ fontSize: 'clamp(3rem, 15vw, 9rem)', letterSpacing: '-0.02em', fontFamily: "'Inter', sans-serif" }}
           >
             GAME<br />CHANGER
           </h1>

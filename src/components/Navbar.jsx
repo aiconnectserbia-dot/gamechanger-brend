@@ -5,8 +5,13 @@ export default function Navbar() {
   const [menuOpen, setMenuOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
 
+  const [showBack, setShowBack] = useState(false);
+
   useEffect(() => {
-    const onScroll = () => setScrolled(window.scrollY > 60);
+    const onScroll = () => {
+      setScrolled(window.scrollY > 60);
+      setShowBack(window.scrollY > 400);
+    };
     window.addEventListener('scroll', onScroll);
     return () => window.removeEventListener('scroll', onScroll);
   }, []);
@@ -49,6 +54,17 @@ export default function Navbar() {
           {menuOpen ? <X size={20} /> : <Menu size={20} />}
         </button>
       </div>
+
+      {/* Back to top button */}
+      {showBack && (
+        <button
+          onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
+          className="fixed bottom-6 right-6 z-50 w-10 h-10 bg-white text-black flex items-center justify-center hover:bg-white/90 transition-all shadow-lg"
+          aria-label="Nazad na vrh"
+        >
+          <ChevronUp size={18} />
+        </button>
+      )}
 
       {menuOpen && (
         <div className="md:hidden bg-black border-t border-white/8 px-6 py-8 flex flex-col gap-5">

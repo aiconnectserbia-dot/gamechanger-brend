@@ -160,6 +160,9 @@ export default function Collection() {
                   <p className="text-white font-semibold text-sm">{selectedProduct.name}</p>
                   <p className="text-white/40 text-[10px] tracking-widest uppercase mt-1">2.390 RSD</p>
                 </div>
+                <button onClick={() => setSelectedProduct(null)} className="text-white/40 hover:text-white transition-colors self-start">
+                  <X size={18} />
+                </button>
               </div>
               <div className="p-5">
                 <p className="text-white/40 text-[9px] tracking-[0.4em] uppercase mb-3">Izaberi veličinu</p>

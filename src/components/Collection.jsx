@@ -129,7 +129,7 @@ export default function Collection() {
                 onClick={() => setShowAll(true)}
                 className="border border-white/20 text-white/60 hover:text-white hover:border-white/50 text-[10px] tracking-[0.4em] uppercase px-10 py-4 transition-colors"
               >
-                Pogledaj celu kolekciju ({products.length} majica)
+                Pogledaj celu kolekciju
               </button>
             </div>
           )}

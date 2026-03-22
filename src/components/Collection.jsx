@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { ShoppingBag } from 'lucide-react';
+import { ShoppingBag, X } from 'lucide-react';
 import CartDrawer from './CartDrawer';
 
 const products = [

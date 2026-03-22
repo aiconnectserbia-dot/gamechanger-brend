@@ -11,6 +11,16 @@ const products = [
   { id: 6, name: 'Be Unique', price: '2.390 RSD', img: 'https://media.base44.com/images/public/69bedb477b225d6b7ba2279f/45d599fd1_IMG_4516.jpg', alt: 'Gamechanger majica Be Unique', tag: 'Bestseller' },
   { id: 7, name: 'Brad', price: '2.390 RSD', img: 'https://media.base44.com/images/public/69bedb477b225d6b7ba2279f/ec9584fb3_IMG_4518.jpg', alt: 'Gamechanger majica Brad', tag: null },
   { id: 8, name: 'Martini', price: '2.390 RSD', img: 'https://media.base44.com/images/public/69bedb477b225d6b7ba2279f/763748073_IMG_4519.jpg', alt: 'Gamechanger majica Martini', tag: 'Novo' },
+  { id: 9, name: 'Enjoy the Process', price: '2.390 RSD', img: 'https://media.base44.com/images/public/69bedb477b225d6b7ba2279f/84fcc51f7_IMG_4506.jpg', alt: 'Gamechanger majica Enjoy the Process', tag: 'Novo' },
+  { id: 10, name: 'Good Vibes', price: '2.390 RSD', img: 'https://media.base44.com/images/public/69bedb477b225d6b7ba2279f/c5e50cc40_IMG_4507.jpg', alt: 'Gamechanger majica Good Vibes', tag: null },
+  { id: 11, name: 'One Dollar', price: '2.390 RSD', img: 'https://media.base44.com/images/public/69bedb477b225d6b7ba2279f/8ee812eec_IMG_4508.jpg', alt: 'Gamechanger majica One Dollar', tag: null },
+  { id: 12, name: 'High Rollers', price: '2.390 RSD', img: 'https://media.base44.com/images/public/69bedb477b225d6b7ba2279f/f072377a0_IMG_4509.jpg', alt: 'Gamechanger majica High Rollers', tag: null },
+  { id: 13, name: 'Napoli', price: '2.390 RSD', img: 'https://media.base44.com/images/public/69bedb477b225d6b7ba2279f/80fb67450_IMG_4517.jpg', alt: 'Gamechanger majica Napoli', tag: 'Novo' },
+  { id: 14, name: 'Hustle', price: '2.390 RSD', img: 'https://media.base44.com/images/public/69bedb477b225d6b7ba2279f/b165d5882_IMG_4520.jpg', alt: 'Gamechanger majica Hustle', tag: null },
+  { id: 15, name: 'Built on Failure', price: '2.390 RSD', img: 'https://media.base44.com/images/public/69bedb477b225d6b7ba2279f/26f433b5f_IMG_4521.jpg', alt: 'Gamechanger majica Built on Failure', tag: null },
+  { id: 16, name: 'Formula', price: '2.390 RSD', img: 'https://media.base44.com/images/public/69bedb477b225d6b7ba2279f/7bb7553fb_IMG_4522.jpg', alt: 'Gamechanger majica Formula', tag: null },
+  { id: 17, name: 'No 9 to 5', price: '2.390 RSD', img: 'https://media.base44.com/images/public/69bedb477b225d6b7ba2279f/e4d942f47_IMG_4523.jpg', alt: 'Gamechanger majica No 9 to 5', tag: 'Bestseller' },
+  { id: 18, name: 'Calm Down', price: '2.390 RSD', img: 'https://media.base44.com/images/public/69bedb477b225d6b7ba2279f/5131aa5d3_IMG_4524.jpg', alt: 'Gamechanger majica Calm Down', tag: null },
 ];
 
 const sizes = ['XS', 'S', 'M', 'L', 'XL', 'XXL'];

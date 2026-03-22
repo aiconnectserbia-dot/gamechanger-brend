@@ -44,76 +44,31 @@ export default function LifestyleStrip() {
           <div className="mt-8 h-px bg-white/8" />
         </div>
 
-        {/* Asymmetric image strip */}
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-3">
-          {/* First image — taller */}
-          <div className="col-span-2 md:col-span-2 row-span-1 relative overflow-hidden group">
-            <div className="aspect-[4/3] md:aspect-[16/10] overflow-hidden">
+        {/* Collage grid — portrait images, no cropping */}
+        <div className="grid grid-cols-2 md:grid-cols-4 gap-3 items-start">
+          {images.map((img, i) => (
+            <div key={i} className="relative overflow-hidden group bg-zinc-950">
               <img
-                src={images[0].src}
-                alt={images[0].alt}
-                className="w-full h-full object-cover object-top transition-transform duration-700 group-hover:scale-105"
+                src={img.src}
+                alt={img.alt}
+                className="w-full h-auto object-contain transition-transform duration-700 group-hover:scale-[1.03]"
               />
+              <div className="absolute bottom-0 left-0 right-0 p-4 bg-gradient-to-t from-black/70 to-transparent">
+                <p className="text-white/60 text-[9px] tracking-[0.4em] uppercase">{img.caption}</p>
+              </div>
             </div>
-            <div className="absolute bottom-0 left-0 right-0 p-5 bg-gradient-to-t from-black/70 to-transparent">
-              <p className="text-white/60 text-[9px] tracking-[0.4em] uppercase">{images[0].caption}</p>
-            </div>
-          </div>
-
-          {/* Second image */}
-          <div className="col-span-1 relative overflow-hidden group">
-            <div className="aspect-[3/4] md:aspect-[3/4] overflow-hidden">
-              <img
-                src={images[1].src}
-                alt={images[1].alt}
-                className="w-full h-full object-cover object-top transition-transform duration-700 group-hover:scale-105"
-              />
-            </div>
-            <div className="absolute bottom-0 left-0 right-0 p-4 bg-gradient-to-t from-black/70 to-transparent">
-              <p className="text-white/60 text-[9px] tracking-[0.4em] uppercase">{images[1].caption}</p>
-            </div>
-          </div>
-
-          {/* Third image */}
-          <div className="col-span-1 relative overflow-hidden group">
-            <div className="aspect-[3/4] md:aspect-[3/4] overflow-hidden">
-              <img
-                src={images[2].src}
-                alt={images[2].alt}
-                className="w-full h-full object-cover object-top transition-transform duration-700 group-hover:scale-105"
-              />
-            </div>
-            <div className="absolute bottom-0 left-0 right-0 p-4 bg-gradient-to-t from-black/70 to-transparent">
-              <p className="text-white/60 text-[9px] tracking-[0.4em] uppercase">{images[2].caption}</p>
-            </div>
-          </div>
+          ))}
         </div>
 
-        {/* Bottom full-width with quote */}
-        <div className="mt-3 grid grid-cols-1 md:grid-cols-3 gap-3">
-          <div className="md:col-span-2 relative overflow-hidden group">
-            <div className="aspect-[16/7] overflow-hidden">
-              <img
-                src={images[3].src}
-                alt={images[3].alt}
-                className="w-full h-full object-cover object-center transition-transform duration-700 group-hover:scale-105"
-              />
-            </div>
-            <div className="absolute bottom-0 left-0 right-0 p-5 bg-gradient-to-t from-black/80 to-transparent">
-              <p className="text-white/60 text-[9px] tracking-[0.4em] uppercase">{images[3].caption}</p>
-            </div>
-          </div>
-
-          {/* Quote block */}
-          <div className="flex flex-col items-center justify-center bg-white/[0.03] border border-white/8 p-8 md:p-10 text-center min-h-[200px]">
-            <p className="text-white/20 text-[9px] tracking-[0.5em] uppercase mb-5">Gamechanger motto</p>
-            <p
-              className="text-white leading-tight font-black uppercase"
-              style={{ fontSize: 'clamp(1.5rem, 3vw, 2.2rem)', letterSpacing: '-0.01em' }}
-            >
-              "Menjaj igru, ne igrača"
-            </p>
-          </div>
+        {/* Quote block */}
+        <div className="mt-3 flex flex-col items-center justify-center bg-white/[0.03] border border-white/8 p-10 text-center">
+          <p className="text-white/20 text-[9px] tracking-[0.5em] uppercase mb-5">Gamechanger motto</p>
+          <p
+            className="text-white leading-tight font-black uppercase"
+            style={{ fontSize: 'clamp(1.5rem, 3vw, 2.2rem)', letterSpacing: '-0.01em' }}
+          >
+            "Menjaj igru, ne igrača"
+          </p>
         </div>
       </div>
     </section>

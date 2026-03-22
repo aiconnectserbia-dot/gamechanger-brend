@@ -15,11 +15,11 @@ export default function Home() {
       <Navbar />
       <Hero />
       <Marquee />
-      <ComingSoon />
       <Collection />
       <LifestyleStrip />
       <About />
       <InstagramFeed />
+      <ComingSoon />
       <Footer />
     </div>
   );

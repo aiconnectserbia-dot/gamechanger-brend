@@ -44,18 +44,20 @@ export default function LifestyleStrip() {
           <div className="mt-8 h-px bg-white/8" />
         </div>
 
-        {/* Collage grid — portrait images, no cropping */}
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-3 items-start">
+        {/* Collage grid */}
+        <div className="grid grid-cols-2 md:grid-cols-4 gap-6 items-start">
           {images.map((img, i) => (
-            <div key={i} className="relative overflow-hidden group bg-zinc-950">
-              <img
-                src={img.src}
-                alt={img.alt}
-                className="w-full h-auto object-contain transition-transform duration-700 group-hover:scale-[1.03]"
-              />
-              <div className="absolute bottom-0 left-0 right-0 p-4 bg-gradient-to-t from-black/70 to-transparent">
-                <p className="text-white/60 text-[9px] tracking-[0.4em] uppercase">{img.caption}</p>
+            <div key={i} className="group flex flex-col gap-3">
+              <div className="relative overflow-hidden bg-zinc-950 outline outline-1 outline-white/20 outline-offset-4">
+                <img
+                  src={img.src}
+                  alt={img.alt}
+                  className="w-full h-auto object-contain transition-transform duration-700 group-hover:scale-[1.03]"
+                />
+                <div className="absolute bottom-0 left-0 right-0 p-4 bg-gradient-to-t from-black/70 to-transparent">
+                </div>
               </div>
+              <p className="text-white/40 text-[9px] tracking-[0.4em] uppercase text-center">{img.caption}</p>
             </div>
           ))}
         </div>

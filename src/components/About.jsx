@@ -8,7 +8,7 @@ export default function About() {
 
           {/* Left: Image */}
           <div className="relative">
-            <div className="aspect-[1/1] md:aspect-[3/4] overflow-hidden">
+            <div className="aspect-[1/1] md:aspect-[3/4] overflow-hidden outline outline-1 outline-white/20 outline-offset-8">
               <img
                 src="https://media.base44.com/images/public/69bedb477b225d6b7ba2279f/e16a0b1df_IMG_4527.jpg"
                 alt="Gamechanger The World Is Yours majica model"

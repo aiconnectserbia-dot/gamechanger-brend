@@ -24,7 +24,6 @@ export default function ComingSoon() {
       <div className="absolute inset-0 bg-gradient-to-b from-black via-black/70 to-black" />
 
       <div className="relative z-10 max-w-3xl mx-auto px-6 md:px-12 py-36 text-center">
-        <p className="text-white/30 text-[10px] tracking-[0.5em] uppercase mb-8">Ekskluzivno</p>
         <h2
           className="text-white font-black uppercase leading-none mb-6"
           style={{ fontSize: 'clamp(3rem, 10vw, 9rem)', letterSpacing: '-0.02em' }}

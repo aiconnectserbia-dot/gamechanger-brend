@@ -1,7 +1,5 @@
 import React, { useState } from 'react';
 import { X, Check, Loader2 } from 'lucide-react';
-import { base44 } from '@/api/base44Client';
-
 const sizes = ['XS', 'S', 'M', 'L', 'XL', 'XXL'];
 
 export default function OrderModal({ cart, total, onClose, onSuccess }) {
@@ -66,11 +64,37 @@ export default function OrderModal({ cart, total, onClose, onSuccess }) {
       </div>
     `;
 
-    await base44.integrations.Core.SendEmail({
-      to: 'matejakrstic512@gmail.com',
-      subject: `🛍️ Nova porudžbina — ${form.ime} ${form.prezime}`,
-      body,
+    const itemsList = cart.map(item =>
+      `${item.name} (${item.size}) x${item.qty} = ${(2390 * item.qty).toLocaleString('sr-RS')} RSD`
+    ).join('\n');
+
+    const message = `
+NOVA PORUDŽBINA — GAMECHANGER
+
+IME: ${form.ime} ${form.prezime}
+EMAIL: ${form.email}
+TELEFON: ${form.telefon}
+ADRESA: ${form.adresa}, ${form.grad} ${form.postanski}
+${form.napomena ? `NAPOMENA: ${form.napomena}` : ''}
+
+PORUDŽBINA:
+${itemsList}
+
+UKUPNO: ${total.toLocaleString('sr-RS')} RSD
+Plaćanje pouzećem · Dostava kurirskom službom
+    `.trim();
+
+    const res = await fetch('https://formspree.io/f/mnjoqvpb', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' },
+      body: JSON.stringify({
+        name: `${form.ime} ${form.prezime}`,
+        email: form.email,
+        message,
+      }),
     });
+
+    if (!res.ok) throw new Error('Greška pri slanju');
 
     setLoading(false);
     setDone(true);

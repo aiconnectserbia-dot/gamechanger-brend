@@ -15,7 +15,7 @@ export default function ComingSoon() {
       {/* Background */}
       <div className="absolute inset-0">
         <img
-          src="https://media.base44.com/images/public/69bedb477b225d6b7ba2279f/9ffb5aa5a_IMG_4526.jpg"
+          src="https://res.cloudinary.com/dnik9se1m/image/upload/IMG_4526_kqo9ha.jpg"
           alt="Gamechanger nova kolekcija"
           className="w-full h-full object-cover"
           style={{ filter: 'brightness(0.1)' }}

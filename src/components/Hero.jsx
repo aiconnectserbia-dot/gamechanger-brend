@@ -1,9 +1,9 @@
 import React, { useState, useEffect } from 'react';
 
 const heroImages = [
-  { src: 'https://media.base44.com/images/public/69bedb477b225d6b7ba2279f/9ffb5aa5a_IMG_4526.jpg', alt: 'Gamechanger ekipa majice Srbija' },
-  { src: 'https://media.base44.com/images/public/69bedb477b225d6b7ba2279f/e458269f7_IMG_4527.jpg', alt: 'Gamechanger The World Is Yours majica' },
-  { src: 'https://media.base44.com/images/public/69bedb477b225d6b7ba2279f/48d203957_IMG_4528.jpg', alt: 'Gamechanger brend majica model Srbija' },
+  { src: 'https://res.cloudinary.com/dnik9se1m/image/upload/IMG_4526_kqo9ha.jpg', alt: 'Gamechanger ekipa majice Srbija' },
+  { src: 'https://res.cloudinary.com/dnik9se1m/image/upload/IMG_4527_rmr8f7.jpg', alt: 'Gamechanger The World Is Yours majica' },
+  { src: 'https://res.cloudinary.com/dnik9se1m/image/upload/IMG_4528_sceaop.jpg', alt: 'Gamechanger brend majica model Srbija' },
 ];
 
 export default function Hero() {

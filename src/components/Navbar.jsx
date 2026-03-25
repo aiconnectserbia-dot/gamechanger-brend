@@ -27,7 +27,7 @@ export default function Navbar() {
       <div className="max-w-7xl mx-auto px-6 md:px-12 py-5 flex items-center justify-between">
         <a href="#" className="hover:opacity-75 transition-opacity">
           <img
-            src="https://media.base44.com/images/public/69bedb477b225d6b7ba2279f/841e7bd15_Photoroom_20260321_191036.png"
+            src="https://res.cloudinary.com/dnik9se1m/image/upload/Photoroom_20260321_191036_we9hlj.jpg"
             alt="Gamechanger logo"
             className="h-24 w-auto"
           />

@@ -2,37 +2,37 @@ import React from 'react';
 
 const images = [
   {
-    src: 'https://media.base44.com/images/public/69bedb477b225d6b7ba2279f/dd53c886e_IMG_4550.jpg',
+    src: 'https://res.cloudinary.com/dnik9se1m/image/upload/IMG_4550_yu6vgk.jpg',
     alt: 'Gamechanger Enjoy the Process devojka kafić',
     caption: 'Enjoy the Process',
   },
   {
-    src: 'https://media.base44.com/images/public/69bedb477b225d6b7ba2279f/9ffb5aa5a_IMG_4526.jpg',
+    src: 'https://res.cloudinary.com/dnik9se1m/image/upload/IMG_4526_kqo9ha.jpg',
     alt: 'Gamechanger ekipa streetwear Srbija',
     caption: 'Zajednica',
   },
   {
-    src: 'https://media.base44.com/images/public/69bedb477b225d6b7ba2279f/a81fea2a3_IMG_4551.jpg',
+    src: 'https://res.cloudinary.com/dnik9se1m/image/upload/IMG_4551_sxrjtg.jpg',
     alt: 'Gamechanger Martini devojka ulica',
     caption: 'Sloboda',
   },
   {
-    src: 'https://media.base44.com/images/public/69bedb477b225d6b7ba2279f/e458269f7_IMG_4527.jpg',
+    src: 'https://res.cloudinary.com/dnik9se1m/image/upload/IMG_4527_rmr8f7.jpg',
     alt: 'Gamechanger The World Is Yours majica model',
     caption: 'Stav',
   },
   {
-    src: 'https://media.base44.com/images/public/69bedb477b225d6b7ba2279f/c4a6d66da_IMG_4552.jpg',
+    src: 'https://res.cloudinary.com/dnik9se1m/image/upload/IMG_4552_a6i67l.jpg',
     alt: 'Gamechanger devojka kafana Kalemegdan',
     caption: 'Autentičnost',
   },
   {
-    src: 'https://media.base44.com/images/public/69bedb477b225d6b7ba2279f/48d203957_IMG_4528.jpg',
+    src: 'https://res.cloudinary.com/dnik9se1m/image/upload/IMG_4528_sceaop.jpg',
     alt: 'Gamechanger model brend majica',
     caption: 'Stil',
   },
   {
-    src: 'https://media.base44.com/images/public/69bedb477b225d6b7ba2279f/0bf456872_IMG_4529.jpg',
+    src: 'https://res.cloudinary.com/dnik9se1m/image/upload/IMG_4529_kyilbl.jpg',
     alt: 'Gamechanger Success majica model',
     caption: 'Mentalitet',
   },

@@ -3,6 +3,7 @@ import Navbar from '../components/Navbar';
 import Hero from '../components/Hero';
 import Marquee from '../components/Marquee';
 import Collection from '../components/Collection.jsx';
+import NewCollection from '../components/NewCollection';
 import LifestyleStrip from '../components/LifestyleStrip';
 import About from '../components/About';
 import InstagramFeed from '../components/InstagramFeed';
@@ -16,6 +17,7 @@ export default function Home() {
       <Hero />
       <Marquee />
       <Collection />
+      <NewCollection />
       <LifestyleStrip />
       <About />
       <InstagramFeed />

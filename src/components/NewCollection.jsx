@@ -132,7 +132,7 @@ export default function NewCollection() {
       {selectedProduct && (
         <>
           <div className="fixed inset-0 bg-black/75 z-40 backdrop-blur-sm" onClick={() => setSelectedProduct(null)} />
-          <div className="fixed inset-0 z-50 flex items-end sm:items-center justify-center p-0 sm:p-6">
+          <div className="fixed inset-0 z-50 flex items-center justify-center p-4">
             <div className="bg-zinc-950 border border-white/10 w-full max-w-sm">
               <div className="flex gap-4 p-5 border-b border-white/8">
                 <div className="w-20 h-24 bg-zinc-900 flex-shrink-0 overflow-hidden">

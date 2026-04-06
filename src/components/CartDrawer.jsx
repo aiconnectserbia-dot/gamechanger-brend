@@ -1,11 +1,14 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { X, Minus, Plus, ShoppingBag, Truck, Shield } from 'lucide-react';
-import OrderModal from './OrderModal';
 
 export default function CartDrawer({ cart, onClose, onUpdateQty, onRemove }) {
-  const [showOrder, setShowOrder] = useState(false);
-
   const total = cart.reduce((sum, item) => sum + 2390 * item.qty, 0);
+
+  const handleOrder = () => {
+    const items = cart.map(i => `${i.name} (${i.size}) x${i.qty}`).join(', ');
+    const msg = encodeURIComponent(`Zdravo! Želim da naručim: ${items}. Ukupno: ${total.toLocaleString('sr-RS')} RSD`);
+    window.open(`https://ig.me/m/gamechanger.rs?text=${msg}`, '_blank');
+  };
 
   return (
     <>
@@ -89,18 +92,14 @@ export default function CartDrawer({ cart, onClose, onUpdateQty, onRemove }) {
             </p>
 
             <button
-              onClick={() => setShowOrder(true)}
+              onClick={handleOrder}
               className="w-full bg-white text-black text-[10px] tracking-[0.35em] uppercase py-4 font-bold hover:bg-white/90 transition-colors"
             >
-              Završi porudžbinu
+              Poruči putem Instagrama
             </button>
           </div>
         )}
       </div>
-
-      {showOrder && (
-        <OrderModal cart={cart} total={total} onClose={() => setShowOrder(false)} onSuccess={onClose} />
-      )}
     </>
   );
 }

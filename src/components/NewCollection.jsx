@@ -3,9 +3,9 @@ import { ShoppingBag, X } from 'lucide-react';
 import CartDrawer from './CartDrawer';
 
 const newProducts = [
-  { id: 101, name: 'Black Swan', price: '2.490 RSD', img: 'https://res.cloudinary.com/dnik9se1m/image/upload/v1775486468/GAMECHANGER_5_uahcfb.png', alt: 'Gamechanger Black Swan majica', tag: 'Novo' },
+  { id: 101, name: 'Shadow Protocol', price: '2.490 RSD', img: 'https://res.cloudinary.com/dnik9se1m/image/upload/v1775486462/GAMECHANGER_12_um1zau.png', alt: 'Gamechanger Shadow Protocol majica', tag: null },
   { id: 102, name: 'Midnight Rebel', price: '2.490 RSD', img: 'https://res.cloudinary.com/dnik9se1m/image/upload/v1775486461/GAMECHANGER_7_ppoqjl.png', alt: 'Gamechanger Midnight Rebel majica', tag: 'Novo' },
-  { id: 103, name: 'Shadow Protocol', price: '2.490 RSD', img: 'https://res.cloudinary.com/dnik9se1m/image/upload/v1775486462/GAMECHANGER_12_um1zau.png', alt: 'Gamechanger Shadow Protocol majica', tag: null },
+  { id: 103, name: 'Black Swan', price: '2.490 RSD', img: 'https://res.cloudinary.com/dnik9se1m/image/upload/v1775486468/GAMECHANGER_5_uahcfb.png', alt: 'Gamechanger Black Swan majica', tag: 'Novo' },
   { id: 104, name: 'Golden Era', price: '2.490 RSD', img: 'https://res.cloudinary.com/dnik9se1m/image/upload/v1775486463/GAMECHANGER_1_qvqh7y.png', alt: 'Gamechanger Golden Era majica', tag: 'Bestseller' },
   { id: 105, name: 'Dark Matter', price: '2.490 RSD', img: 'https://res.cloudinary.com/dnik9se1m/image/upload/v1775486463/GAMECHANGER_8_twqjaa.png', alt: 'Gamechanger Dark Matter majica', tag: null },
   { id: 106, name: 'Phantom Vibes', price: '2.490 RSD', img: 'https://res.cloudinary.com/dnik9se1m/image/upload/v1775486463/GAMECHANGER_3_eo6dld.png', alt: 'Gamechanger Phantom Vibes majica', tag: 'Novo' },

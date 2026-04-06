@@ -7,7 +7,7 @@ export default function CartDrawer({ cart, onClose, onUpdateQty, onRemove }) {
   const handleOrder = () => {
     const items = cart.map(i => `${i.name} (${i.size}) x${i.qty}`).join(', ');
     const msg = encodeURIComponent(`Zdravo! Želim da naručim: ${items}. Ukupno: ${total.toLocaleString('sr-RS')} RSD`);
-    window.open(`https://ig.me/m/gamechanger.rs?text=${msg}`, '_blank');
+    window.open(`https://www.instagram.com/gamechanger.rs/`, '_blank');
   };
 
   return (

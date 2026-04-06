@@ -3,7 +3,7 @@ import { ShoppingBag, X } from 'lucide-react';
 import CartDrawer from './CartDrawer';
 
 const newProducts = [
-  { id: 101, name: 'Eternal Flame', price: '2.490 RSD', img: 'https://res.cloudinary.com/dnik9se1m/image/upload/v1775486461/GAMECHANGER_tjroyw.png', alt: 'Gamechanger Eternal Flame majica', tag: 'Novo' },
+  { id: 101, name: 'Black Swan', price: '2.490 RSD', img: 'https://res.cloudinary.com/dnik9se1m/image/upload/v1775486468/GAMECHANGER_5_uahcfb.png', alt: 'Gamechanger Black Swan majica', tag: 'Novo' },
   { id: 102, name: 'Midnight Rebel', price: '2.490 RSD', img: 'https://res.cloudinary.com/dnik9se1m/image/upload/v1775486461/GAMECHANGER_7_ppoqjl.png', alt: 'Gamechanger Midnight Rebel majica', tag: 'Novo' },
   { id: 103, name: 'Shadow Protocol', price: '2.490 RSD', img: 'https://res.cloudinary.com/dnik9se1m/image/upload/v1775486462/GAMECHANGER_12_um1zau.png', alt: 'Gamechanger Shadow Protocol majica', tag: null },
   { id: 104, name: 'Golden Era', price: '2.490 RSD', img: 'https://res.cloudinary.com/dnik9se1m/image/upload/v1775486463/GAMECHANGER_1_qvqh7y.png', alt: 'Gamechanger Golden Era majica', tag: 'Bestseller' },
@@ -16,7 +16,7 @@ const newProducts = [
   { id: 111, name: 'Velvet Rush', price: '2.490 RSD', img: 'https://res.cloudinary.com/dnik9se1m/image/upload/v1775486467/GAMECHANGER_6_dkzuh6.png', alt: 'Gamechanger Velvet Rush majica', tag: null },
   { id: 112, name: 'Chrome Dreams', price: '2.490 RSD', img: 'https://res.cloudinary.com/dnik9se1m/image/upload/v1775486468/GAMECHANGER_4_dqwma8.png', alt: 'Gamechanger Chrome Dreams majica', tag: null },
   { id: 113, name: 'Obsidian', price: '2.490 RSD', img: 'https://res.cloudinary.com/dnik9se1m/image/upload/v1775486468/GAMECHANGER_10_ymmahx.png', alt: 'Gamechanger Obsidian majica', tag: 'Bestseller' },
-  { id: 114, name: 'Black Swan', price: '2.490 RSD', img: 'https://res.cloudinary.com/dnik9se1m/image/upload/v1775486468/GAMECHANGER_5_uahcfb.png', alt: 'Gamechanger Black Swan majica', tag: 'Novo' },
+  { id: 114, name: 'Eternal Flame', price: '2.490 RSD', img: 'https://res.cloudinary.com/dnik9se1m/image/upload/v1775486461/GAMECHANGER_tjroyw.png', alt: 'Gamechanger Eternal Flame majica', tag: 'Novo' },
 ];
 
 const sizes = ['XS', 'S', 'M', 'L', 'XL', 'XXL'];

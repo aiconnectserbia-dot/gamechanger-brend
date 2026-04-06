@@ -31,7 +31,7 @@ export default function CartDrawer({ cart, onClose, onUpdateQty, onRemove }) {
         </div>
 
         {/* Items */}
-        <div className="flex-1 overflow-y-auto px-6 py-4 space-y-5">
+        <div className="flex-1 overflow-y-auto px-6 py-4 space-y-5 min-h-0">
           {cart.length === 0 && (
             <p className="text-white/30 text-sm text-center mt-16 tracking-wide">Korpa je prazna.</p>
           )}

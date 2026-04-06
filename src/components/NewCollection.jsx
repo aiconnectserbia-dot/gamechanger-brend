@@ -3,20 +3,20 @@ import { ShoppingBag, X } from 'lucide-react';
 import CartDrawer from './CartDrawer';
 
 const newProducts = [
-  { id: 101, name: 'Shadow Protocol', price: '2.490 RSD', img: 'https://res.cloudinary.com/dnik9se1m/image/upload/v1775486462/GAMECHANGER_12_um1zau.png', alt: 'Gamechanger Shadow Protocol majica', tag: null },
-  { id: 102, name: 'Midnight Rebel', price: '2.490 RSD', img: 'https://res.cloudinary.com/dnik9se1m/image/upload/v1775486461/GAMECHANGER_7_ppoqjl.png', alt: 'Gamechanger Midnight Rebel majica', tag: 'Novo' },
-  { id: 103, name: 'Black Swan', price: '2.490 RSD', img: 'https://res.cloudinary.com/dnik9se1m/image/upload/v1775486468/GAMECHANGER_5_uahcfb.png', alt: 'Gamechanger Black Swan majica', tag: 'Novo' },
-  { id: 104, name: 'Golden Era', price: '2.490 RSD', img: 'https://res.cloudinary.com/dnik9se1m/image/upload/v1775486463/GAMECHANGER_1_qvqh7y.png', alt: 'Gamechanger Golden Era majica', tag: 'Bestseller' },
-  { id: 105, name: 'Dark Matter', price: '2.490 RSD', img: 'https://res.cloudinary.com/dnik9se1m/image/upload/v1775486463/GAMECHANGER_8_twqjaa.png', alt: 'Gamechanger Dark Matter majica', tag: null },
-  { id: 106, name: 'Phantom Vibes', price: '2.490 RSD', img: 'https://res.cloudinary.com/dnik9se1m/image/upload/v1775486463/GAMECHANGER_3_eo6dld.png', alt: 'Gamechanger Phantom Vibes majica', tag: 'Novo' },
-  { id: 107, name: 'Silent Storm', price: '2.490 RSD', img: 'https://res.cloudinary.com/dnik9se1m/image/upload/v1775486464/GAMECHANGER_11_edoeck.png', alt: 'Gamechanger Silent Storm majica', tag: null },
-  { id: 108, name: 'Empire State', price: '2.490 RSD', img: 'https://res.cloudinary.com/dnik9se1m/image/upload/v1775486465/GAMECHANGER_13_cxpen5.png', alt: 'Gamechanger Empire State majica', tag: 'Bestseller' },
-  { id: 109, name: 'Raw Energy', price: '2.490 RSD', img: 'https://res.cloudinary.com/dnik9se1m/image/upload/v1775486466/GAMECHANGER_2_ouk860.png', alt: 'Gamechanger Raw Energy majica', tag: null },
-  { id: 110, name: 'Neon Noir', price: '2.490 RSD', img: 'https://res.cloudinary.com/dnik9se1m/image/upload/v1775486466/GAMECHANGER_9_cofjhz.png', alt: 'Gamechanger Neon Noir majica', tag: 'Novo' },
-  { id: 111, name: 'Velvet Rush', price: '2.490 RSD', img: 'https://res.cloudinary.com/dnik9se1m/image/upload/v1775486467/GAMECHANGER_6_dkzuh6.png', alt: 'Gamechanger Velvet Rush majica', tag: null },
-  { id: 112, name: 'Chrome Dreams', price: '2.490 RSD', img: 'https://res.cloudinary.com/dnik9se1m/image/upload/v1775486468/GAMECHANGER_4_dqwma8.png', alt: 'Gamechanger Chrome Dreams majica', tag: null },
-  { id: 113, name: 'Obsidian', price: '2.490 RSD', img: 'https://res.cloudinary.com/dnik9se1m/image/upload/v1775486468/GAMECHANGER_10_ymmahx.png', alt: 'Gamechanger Obsidian majica', tag: 'Bestseller' },
-  { id: 114, name: 'Eternal Flame', price: '2.490 RSD', img: 'https://res.cloudinary.com/dnik9se1m/image/upload/v1775486461/GAMECHANGER_tjroyw.png', alt: 'Gamechanger Eternal Flame majica', tag: 'Novo' },
+  { id: 101, name: 'Rodman', price: '2.490 RSD', img: 'https://res.cloudinary.com/dnik9se1m/image/upload/v1775486462/GAMECHANGER_12_um1zau.png', alt: 'Gamechanger Rodman majica', tag: null },
+  { id: 102, name: 'Jones', price: '2.490 RSD', img: 'https://res.cloudinary.com/dnik9se1m/image/upload/v1775486461/GAMECHANGER_7_ppoqjl.png', alt: 'Gamechanger Jones majica', tag: 'Novo' },
+  { id: 103, name: 'Iron Mike', price: '2.490 RSD', img: 'https://res.cloudinary.com/dnik9se1m/image/upload/v1775486468/GAMECHANGER_5_uahcfb.png', alt: 'Gamechanger Iron Mike majica', tag: 'Novo' },
+  { id: 104, name: 'Shara Bullet', price: '2.490 RSD', img: 'https://res.cloudinary.com/dnik9se1m/image/upload/v1775486463/GAMECHANGER_1_qvqh7y.png', alt: 'Gamechanger Shara Bullet majica', tag: 'Bestseller' },
+  { id: 105, name: 'Joker', price: '2.490 RSD', img: 'https://res.cloudinary.com/dnik9se1m/image/upload/v1775486463/GAMECHANGER_8_twqjaa.png', alt: 'Gamechanger Joker majica', tag: null },
+  { id: 106, name: 'Ali', price: '2.490 RSD', img: 'https://res.cloudinary.com/dnik9se1m/image/upload/v1775486463/GAMECHANGER_3_eo6dld.png', alt: 'Gamechanger Ali majica', tag: 'Novo' },
+  { id: 107, name: 'Jordan', price: '2.490 RSD', img: 'https://res.cloudinary.com/dnik9se1m/image/upload/v1775486464/GAMECHANGER_11_edoeck.png', alt: 'Gamechanger Jordan majica', tag: null },
+  { id: 108, name: 'Topuria', price: '2.490 RSD', img: 'https://res.cloudinary.com/dnik9se1m/image/upload/v1775486465/GAMECHANGER_13_cxpen5.png', alt: 'Gamechanger Topuria majica', tag: 'Bestseller' },
+  { id: 109, name: 'Ronaldo', price: '2.490 RSD', img: 'https://res.cloudinary.com/dnik9se1m/image/upload/v1775486466/GAMECHANGER_2_ouk860.png', alt: 'Gamechanger Ronaldo majica', tag: null },
+  { id: 110, name: 'Khabib', price: '2.490 RSD', img: 'https://res.cloudinary.com/dnik9se1m/image/upload/v1775486466/GAMECHANGER_9_cofjhz.png', alt: 'Gamechanger Khabib majica', tag: 'Novo' },
+  { id: 111, name: 'Conor', price: '2.490 RSD', img: 'https://res.cloudinary.com/dnik9se1m/image/upload/v1775486467/GAMECHANGER_6_dkzuh6.png', alt: 'Gamechanger Conor majica', tag: null },
+  { id: 112, name: 'Maradona', price: '2.490 RSD', img: 'https://res.cloudinary.com/dnik9se1m/image/upload/v1775486468/GAMECHANGER_4_dqwma8.png', alt: 'Gamechanger Maradona majica', tag: null },
+  { id: 113, name: 'The Borz', price: '2.490 RSD', img: 'https://res.cloudinary.com/dnik9se1m/image/upload/v1775486468/GAMECHANGER_10_ymmahx.png', alt: 'Gamechanger The Borz majica', tag: 'Bestseller' },
+  { id: 114, name: 'Al Pacino', price: '2.490 RSD', img: 'https://res.cloudinary.com/dnik9se1m/image/upload/v1775486461/GAMECHANGER_tjroyw.png', alt: 'Gamechanger Al Pacino majica', tag: 'Novo' },
 ];
 
 const sizes = ['XS', 'S', 'M', 'L', 'XL', 'XXL'];

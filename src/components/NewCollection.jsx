@@ -101,10 +101,10 @@ export default function NewCollection() {
             {newProducts.map((p, index) => (
               <div
                 key={p.id}
-                className={`group cursor-pointer ${index === 0 ? 'col-span-2 md:col-span-2' : ''}`}
+                className="group cursor-pointer"
                 onClick={() => openProduct(p)}
               >
-                <div className={`relative overflow-hidden bg-zinc-950 mb-3 ${index === 0 ? 'aspect-[16/9] md:aspect-[2/1]' : 'aspect-[3/4]'}`}>
+                <div className="relative overflow-hidden bg-zinc-950 mb-3 aspect-[3/4]">
                   <img src={p.img} alt={p.alt} className="w-full h-full object-cover object-top transition-transform duration-700 group-hover:scale-[1.04]" />
                   {p.tag && (
                     <span className="absolute top-2 left-2 md:top-3 md:left-3 bg-white text-black text-[7px] md:text-[8px] tracking-[0.25em] uppercase px-2 py-0.5 md:px-2.5 md:py-1 font-bold">

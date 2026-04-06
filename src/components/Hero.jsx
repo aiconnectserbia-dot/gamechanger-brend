@@ -37,12 +37,15 @@ export default function Hero() {
             GAME<br />CHANGER
           </h1>
           <div className="flex flex-col sm:flex-row items-start sm:items-center gap-4 md:gap-6">
-            <a
-              href="#kolekcija"
-              className="inline-block bg-white text-black text-[9px] tracking-[0.35em] uppercase px-7 py-3.5 md:px-8 md:py-4 font-semibold hover:bg-white/90 transition-colors"
-            >
-              Istraži kolekciju
-            </a>
+            <div className="flex flex-col gap-1.5">
+              <a
+                href="#kolekcija"
+                className="inline-block bg-white text-black text-[9px] tracking-[0.35em] uppercase px-7 py-3.5 md:px-8 md:py-4 font-semibold hover:bg-white/90 transition-colors"
+              >
+                Istraži kolekciju
+              </a>
+              <p className="text-white/35 text-[9px] tracking-[0.2em]">Poručivanje putem Instagrama</p>
+            </div>
             <a href="#o-brendu" className="text-white/40 text-[10px] tracking-[0.3em] uppercase hover:text-white transition-colors">
               O brendu →
             </a>

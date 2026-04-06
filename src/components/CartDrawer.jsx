@@ -16,7 +16,7 @@ export default function CartDrawer({ cart, onClose, onUpdateQty, onRemove }) {
       <div className="fixed inset-0 bg-black/70 z-40 backdrop-blur-sm" onClick={onClose} />
 
       {/* Drawer */}
-      <div className="fixed top-0 right-0 h-full w-full max-w-md bg-zinc-950 border-l border-white/8 z-50 flex flex-col">
+      <div className="fixed top-0 right-0 h-screen w-full max-w-md bg-zinc-950 border-l border-white/8 z-50 flex flex-col overflow-hidden">
         
         {/* Header */}
         <div className="flex items-center justify-between px-6 py-5 border-b border-white/8">
@@ -72,7 +72,7 @@ export default function CartDrawer({ cart, onClose, onUpdateQty, onRemove }) {
 
         {/* Footer */}
         {cart.length > 0 && (
-          <div className="px-6 py-6 border-t border-white/8 space-y-4">
+          <div className="px-6 py-6 border-t border-white/8 space-y-4 flex-shrink-0">
             {/* Perks */}
             <div className="flex gap-4 text-[9px] tracking-[0.25em] uppercase text-white/30">
               <span className="flex items-center gap-1.5"><Truck size={10} /> Plaćanje pouzećem</span>
